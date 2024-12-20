@@ -1,0 +1,61 @@
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグレポートありがとうございます！
+  - type: input
+    id: contact
+    attributes:
+      label: 連絡先
+      description: 連絡先を教えてください
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 何が起きたのか?
+      description: 何が起こったか教えてください！
+      placeholder: 何が起きたか教えて
+      value: "バグです！"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: 度のバージョンを動かしていますか？
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: どのブラウザで発生しましたか？
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: ログの内容
+      description: 出力されたログがあればこちらに貼り付けてください
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: 行動規範
+      description: Issueを作成すると、我々の[行動規範](CODE_OF_CONDUCT.md)に同意したことになります
+      options:
+        - label: 私はこのプロジェクトの行動規範に同意します
+          required: true
