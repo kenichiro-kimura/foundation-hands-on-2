@@ -28,7 +28,7 @@ body:
     id: version
     attributes:
       label: Version
-      description: 度のバージョンを動かしていますか？
+      description: どのバージョンを動かしていますか？
       options:
         - 1.0.2 (Default)
         - 1.0.3 (Edge)
