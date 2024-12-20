@@ -12,6 +12,6 @@ Foundationのハンズオン用のリポジトリです。
 *イタリック*  
 ~~打ち消し~~
 
+## Updated by
 
-
-
+kenichiro-kimura
